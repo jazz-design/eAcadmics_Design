@@ -1153,14 +1153,14 @@ input:last-of-type
 	font-family: 'Roboto', sans-serif;
 	font-size: 22px;
 	font-weight: 500;
-	color: #1a1a1a;
+	color: #102451;
 	margin-bottom: 13px;
 }
 .service_item p
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #a5a5a5;
+	color: #3d3d3d;
 	max-width: 100%;
 	margin-bottom: 0px;
 }

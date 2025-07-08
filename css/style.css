@@ -124,9 +124,9 @@
   --borderRadius2: 20px;
   --borderRadius3: 10px;
   --transition: .3s;
-  --bodyFont: "Inter", sans-serif;
-  --headingFont: "Hind", sans-serif;
-  --contentFont: "Inter", sans-serif;
+  --bodyFont: "Roboto";
+  --headingFont: "Roboto";
+  --contentFont: "Roboto";
 }
 
 .is_dark {
@@ -167,16 +167,15 @@ Default CSS
 }
 
 body {
-  font-family: var(--bodyFont);
+  font-family: Roboto;
   background-color: var(--bodyBg);
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.8;
   position: relative;
 }
 
 p {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 15px;
   color: var(--contentColor);
 }
@@ -969,10 +968,9 @@ Header Area
   position: relative;
 }
 .headerarea__main__menu nav ul > li a {
-  padding: 40px 20px;
+  padding: 40px 10px;
   display: block;
   font-size: 16px;
-  font-weight: 600;
   position: relative;
   color: var(--blackColor);
 }
@@ -1328,7 +1326,7 @@ Header Area
 
 .topbar__left ul li {
   color: var(--whiteColor);
-  font-size: 14px;
+  font-size: 13px;
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .topbar__left ul li {
@@ -11951,7 +11949,7 @@ Breadcrumb Area
 Footer Area
 -------------------------------*/
 .footerarea {
-  background: var(--darkblack);
+  background:#102554;
 }
 .footerarea__newsletter__wraper {
   padding-bottom: 45px;
@@ -11972,12 +11970,12 @@ Footer Area
 }
 .footerarea__newsletter__input input {
   width: 100%;
-  color: var(--whiteColor);
+  color: #000;
   height: 62px;
-  background: var(--deepgray);
+  background: #ffffff;
   font-size: 16px;
   padding-left: 15px;
-  border: 1px solid var(--deepgray);
+  border: 1px solid #fff;
   border-radius: var(--borderRadius);
 }
 .footerarea__newsletter__input input::placeholder {
@@ -11993,11 +11991,11 @@ Footer Area
 }
 .footerarea__newsletter__button .subscribe__btn {
   padding: 0 20px;
-  background: var(--primaryColor);
+  background: #1abed4;;
   text-align: center;
-  color: var(--whiteColor);
+  color: #000;
   display: inline-block;
-  border: 1px solid var(--primaryColor);
+  border: 1px solid #1abed4;;;
   border-radius: var(--borderRadius);
   font-size: 15px;
   height: 62px;
@@ -12025,8 +12023,8 @@ Footer Area
 }
 
 .footerarea__wrapper {
-  padding-top: 110px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 0px;
   border-bottom: 1px solid var(--darkcolor);
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -12097,8 +12095,7 @@ Footer Area
   margin-bottom: 20px;
 }
 .footerarea__wrapper .footerarea__inner .footerarea__heading h3 {
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 18px;
   color: var(--whiteColor);
   font-family: var(--headingFont);
 }
@@ -12198,8 +12195,8 @@ Footer Area
 }
 
 .footerarea__copyright__wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .footerarea__copyright__wrapper {
@@ -12225,6 +12222,7 @@ Footer Area
 }
 .footerarea__copyright__wrapper .footerarea__copyright__content.footerarea__copyright__content__2 p {
   color: var(--whiteColor);
+  padding-top: 35px;
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .footerarea__copyright__wrapper .footerarea__copyright__content.footerarea__copyright__content__2 p {
@@ -12236,7 +12234,7 @@ Footer Area
   margin-bottom: 0;
 }
 .footerarea__copyright__wrapper .footerarea__copyright__content p span {
-  color: var(--primaryColor);
+  color: #1abed4;
 }
 .footerarea__copyright__wrapper .footerarea__copyright__content p a {
   color: var(--darkgray);
@@ -12299,7 +12297,7 @@ Footer Area
   }
 }
 .footerarea__text h3 span {
-  color: var(--primaryColor);
+  color: #1abed4;
 }
 .footerarea__text p {
   color: rgba(255, 255, 255, 0.65);

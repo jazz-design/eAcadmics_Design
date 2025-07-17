@@ -6713,8 +6713,8 @@ Testimonial Area
 
 .testimonialarea__3 {
   background: var(--lightGrey10);
-  padding-top: 145px;
-  padding-bottom: 154px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .testimonialarea__3 {

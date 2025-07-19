@@ -124,9 +124,9 @@
   --borderRadius2: 20px;
   --borderRadius3: 10px;
   --transition: .3s;
-  --bodyFont: "Roboto";
-  --headingFont: "Roboto";
-  --contentFont: "Roboto";
+  --bodyFont: "Inter", sans-serif;
+  --headingFont: "Hind", sans-serif;
+  --contentFont: "Inter", sans-serif;
 }
 
 .is_dark {
@@ -6874,7 +6874,7 @@ Counter Area
   font-weight: 700;
   font-size: 34px;
   line-height: 1.1;
-  font-family: "Hind";
+  font-family:  var(--headingFont);
   color: var(--blackColor);
 }
 .counterarea__text__wraper .counter__content__wraper p {

@@ -73,7 +73,7 @@
   --headingColor: #222222;
   --contentColor: #5F6C76;
   --contentColor2: #5C727D;
-  --primaryColor: #5F2DED;
+  --primaryColor: #1a3778;
   --secondaryColor: #d32424;
   --secondaryColor2: #d32424;
   --secondaryColor3: #d32424;
@@ -104,7 +104,7 @@
   --borderColor2: #dddddd;
   --borderColor3: #f8f8f8;
   --borderColor4: #cacaca;
-  --darkdeep1: #170F2F;
+  --darkdeep1: #15194d;
   --darkdeep2: #37404E;
   --darkdeep3: #F4F4F8;
   --darkdeep4: #949392;
@@ -4400,6 +4400,7 @@ Popular Area
 }
 .single__service:hover {
   background: var(--primaryColor);
+  color: #fff;
   transform: translateY(-5px);
 }
 .single__service:hover .service__small__img svg {
@@ -4452,6 +4453,22 @@ Popular Area
   line-height: 1;
   margin-bottom: 15px;
 }
+
+.populerarea__2 .service__content h3 a {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 15px;
+ 
+}
+.populerarea__2 .service__content h3 a:hover {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 15px;
+  color: #red;
+}
+
 .populerarea__2 .service__button a:hover {
   color: var(--secondaryColor);
 }
@@ -4485,6 +4502,8 @@ Popular Area
   line-height: 29px;
   margin-bottom: 5px;
 }
+
+
 @media (min-width: 992px) and (max-width: 1365px) {
   .service__content h3 {
     font-size: 17px;
@@ -6038,7 +6057,7 @@ Register Area
   width: 100%;
   left: 0;
   right: auto;
-  background: rgba(38, 0, 148, 0.93);
+  background: rgba(22, 42, 98, 0.95);
   top: 0;
   bottom: 0;
 }
@@ -6712,7 +6731,7 @@ Testimonial Area
 }
 
 .testimonialarea__3 {
-  background: var(--lightGrey10);
+  
   padding-top: 60px;
   padding-bottom: 60px;
 }

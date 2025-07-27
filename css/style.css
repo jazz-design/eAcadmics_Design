@@ -976,7 +976,7 @@ Header Area
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .headerarea__main__menu nav ul > li a {
-    padding: 30px 15px;
+    padding: 30px 10px;
   }
 }
 @media (min-width: 992px) and (max-width: 1365px) {

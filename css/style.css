@@ -608,29 +608,34 @@ li {
   font-size: 42px;
   line-height: 54px;
   margin-bottom: 0;
+  color: var(--primaryColor);
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .section__title .section__title__heading h2 {
     font-size: 38px;
     line-height: 50px;
+    color: var(--primaryColor);
   }
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .section__title .section__title__heading h2 {
     font-size: 35px;
     line-height: 45px;
+    color: var(--primaryColor);
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .section__title .section__title__heading h2 {
     font-size: 35px;
     line-height: 45px;
+    color: var(--primaryColor);
   }
 }
 @media (max-width: 767px) {
   .section__title .section__title__heading h2 {
     font-size: 30px;
     line-height: 40px;
+    color: var(--primaryColor);
   }
 }
 
@@ -687,23 +692,27 @@ li {
 .section__title__2 .section__title__heading__2.heading__fontsize__2 h2 {
   font-size: 47px;
   line-height: 50px;
+  color: var(--primaryColor);
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .section__title__2 .section__title__heading__2.heading__fontsize__2 h2 {
     font-size: 42px;
     line-height: 48px;
+    color: var(--primaryColor);
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .section__title__2 .section__title__heading__2.heading__fontsize__2 h2 {
     font-size: 35px;
     line-height: 45px;
+    color: var(--primaryColor);
   }
 }
 @media (max-width: 767px) {
   .section__title__2 .section__title__heading__2.heading__fontsize__2 h2 {
     font-size: 30px;
     line-height: 40px;
+    color: var(--primaryColor);
   }
 }
 .section__title__2 .section__title__heading__2 h2 {
@@ -3743,11 +3752,13 @@ About Area
   font-size: 45px;
   line-height: 54px;
   font-weight: 700;
+  color: var(--primaryColor);
 }
 @media (max-width: 767px) {
   .aboutarea__content__wraper .aboutarea__headding h2 {
     font-size: 30px;
     line-height: 40px;
+    color: var(--primaryColor);
   }
 }
 .aboutarea__content__wraper .aboutarea__para {
@@ -4428,7 +4439,7 @@ Popular Area
   color: var(--whiteColor);
 }
 .single__service.ss_margin {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 @media (max-width: 767px) {
   .single__service.ss_margin {

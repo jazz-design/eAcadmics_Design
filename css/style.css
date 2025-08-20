@@ -3246,9 +3246,7 @@ Hero Banner Area
 .herobannerarea.herobannerarea__machine__learning .herobannerarea__text__2 p {
   color: var(--whiteColor);
 }
-.herobannerarea.herobannerarea__machine__learning .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__1 {
-  left: 40px;
-  bottom: 10%;
+
 }
 .herobannerarea.herobannerarea__machine__learning .slider__controls__wrap.slider__controls__pagination .swiper-pagination-bullet {
   outline: 2px solid var(--whiteColor);
@@ -3980,10 +3978,12 @@ About Area
 .aboutarea__5__img {
   background-image: url(../img/about/about_8.png);
   position: relative;
+  background-repeat: no-repeat;
 }
 .aboutarea__5__img img {
   width: 100%;
   border-radius: 10px;
+  
 }
 
 .aboutarea__content__wraper__5 {
@@ -4456,7 +4456,7 @@ Popular Area
   background-color: var(--lightGrey10);
 }
 .populerarea__2 .row {
-  align-items: center;
+  
 }
 .populerarea__2 .service__content h3 {
   font-size: 23px;
@@ -4466,14 +4466,14 @@ Popular Area
 }
 
 .populerarea__2 .service__content h3 a {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   margin-bottom: 15px;
  
 }
 .populerarea__2 .service__content h3 a:hover {
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1;
   margin-bottom: 15px;
@@ -6451,9 +6451,10 @@ Testimonial Area
   margin-left: 22px;
 }
 .single__testimonial__wraper .single__testimonial__inner .testimonial__img .testimonial__name h6 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 0;
+  color: var(--primaryColor);
 }
 @media (max-width: 767px) {
   .single__testimonial__wraper .single__testimonial__inner .testimonial__img .testimonial__name h6 {
@@ -6477,7 +6478,7 @@ Testimonial Area
   color: var(--lightGrey6);
 }
 .single__testimonial__wraper .testimonial__content p {
-  line-height: 32px;
+  line-height: 24px;
   margin-bottom: 0;
 }
 
@@ -6771,7 +6772,7 @@ Testimonial Area
 .testimonialarea__paragraph__3 p {
   font-weight: 400;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 32px;
   color: var(--lightGrey);
 }
 @media (max-width: 767px) {
@@ -9682,6 +9683,34 @@ Breadcrumb Area
   background: var(--lightGrey10);
   position: relative;
 }
+.breadcrumb-bg {
+  position: relative;
+  background:url("../img/about/school_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0; /* adjust spacing */
+  color: #fff;
+  z-index: 1;
+}
+
+/* Overlay effect */
+.breadcrumb-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7); /* adjust opacity */
+  z-index: -1;
+}
+
+.breadcrumb-bg .breadcrumb__content__wraper {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
 @media (min-width: 992px) and (max-width: 1365px) {
   .breadcrumbarea {
     padding-top: 100px;
@@ -9718,7 +9747,7 @@ Breadcrumb Area
   font-weight: 700;
   font-size: 55px;
   line-height: 72px;
-  color: var(--blackColor2);
+  color: var(--whiteColor);
   margin: 0;
 }
 @media (min-width: 992px) and (max-width: 1365px) {
@@ -9738,6 +9767,10 @@ Breadcrumb Area
     font-size: 30px;
   }
 }
+
+
+
+
 
 .shape__icon__2 .shape__icon__img {
   position: absolute;
@@ -9825,7 +9858,7 @@ Breadcrumb Area
 .breadcrumb__inner ul li {
   font-size: 18px;
   line-height: 22px;
-  color: var(--blackColor2);
+  color: var(--skycolor);
   font-weight: 400;
 }
 .breadcrumb__inner ul li a {
@@ -9834,7 +9867,7 @@ Breadcrumb Area
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: var(--blackColor2);
+  color: var(--skycolor);
 }
 .breadcrumb__inner ul li a:hover {
   color: var(--primaryColor);

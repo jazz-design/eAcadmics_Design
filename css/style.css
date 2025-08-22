@@ -4495,6 +4495,16 @@ Popular Area
   max-width: 60px;
   margin-bottom: 10px;
 }
+
+.service__imgbig {
+  position: relative;
+  margin-bottom: 10px;
+}
+.service__imgbig img {
+  max-width: 100px;
+  margin-bottom: 10px;
+} 
+
 .service__img svg {
   max-height: 60px;
   transition: var(--transition);

@@ -7415,11 +7415,11 @@ Blog
 }
 
 .single__blog__content {
-  padding: 30px 20px 40px 30px;
+  padding: 15px 15px 15px 15px;
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .single__blog__content {
-    padding: 30px 10px 40px 20px;
+    padding:  15px 15px 15px 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -8771,7 +8771,7 @@ Course
 .content__cirriculum__wrap .accordion-button {
   font-size: 20px;
   color: var(--headingColor);
-  font-weight: 700;
+  
   box-shadow: none;
 }
 .content__cirriculum__wrap .accordion-body {
@@ -8835,7 +8835,7 @@ Course
 }
 
 .content__cirriculum__wrap .accordion-item {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   border: 1px solid var(--borderColor);
 }
 
@@ -9703,7 +9703,6 @@ Breadcrumb Area
   color: #fff;
   z-index: 1;
 }
-
 /* Overlay effect */
 .breadcrumb-bg::before {
   content: "";
@@ -9721,6 +9720,57 @@ Breadcrumb Area
   z-index: 2;
 }
 
+
+
+.breadcrumb-bg1 {
+  position: relative;
+  background:url("../img/about/uni_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0; /* adjust spacing */
+  color: #fff;
+  z-index: 1;
+}
+
+/* Overlay effect */
+.breadcrumb-bg1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7); /* adjust opacity */
+  z-index: -1;
+}
+
+.breadcrumb-bg1 .breadcrumb__content__wraper {
+  position: relative;
+  z-index: 2;
+}
+
+.breadcrumb-bgabt {
+  position: relative;
+  background:url("../img/about/abt_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0; /* adjust spacing */
+  color: #fff;
+  z-index: 1;
+}
+
+/* Overlay effect */
+.breadcrumb-bgabt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7); /* adjust opacity */
+  z-index: -1;
+}
+
+.breadcrumb-bgabt .breadcrumb__content__wraper {
+  position: relative;
+  z-index: 2;
+}
 
 
 

@@ -4481,15 +4481,18 @@ Popular Area
   line-height: 1;
   margin-bottom: 15px;
   color: #ffffff;
+  background-color: var(--primaryColor);
 }
 
 .populerarea__2 .service__button a:hover {
-  color: var(--secondaryColor);
+  color: #ffffff;
+ 
   
 }
 /* Target only Polytechnic Colleges */
 .single__service .service__content h3:hover {
   color: #ffffff !important;
+  background-color: var(--primaryColor);
 }
 
 .populerarea__2 .single__service {

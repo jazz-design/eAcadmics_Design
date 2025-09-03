@@ -99,7 +99,7 @@
   --greencolor2: #1EC902;
   --greencolor3: #2EC14A;
   --orange: #FE2323;
-  --borderColor: #eeeeee;
+  --borderColor: #999999;
   --borderColor1: #E5E5E5;
   --borderColor2: #dddddd;
   --borderColor3: #f8f8f8;
@@ -4412,6 +4412,12 @@ Popular Area
   border-radius: var(--borderRadius3);
   background: var(--whiteColor);
 }
+.single__service:hover h3{
+
+  color: #fff;
+
+}
+
 .single__service:hover {
   background: var(--primaryColor);
   color: #fff;
@@ -6272,8 +6278,8 @@ Register Area
 .registerarea__form form .register__input {
   height: 50px;
   width: 100%;
-  border: none;
-  background: var(--lightGrey8);
+  border: 1px solid #d1d1d1;
+  background: #ffffff;
   padding: 10px 15px;
   font-size: 16px;
   line-height: 54px;

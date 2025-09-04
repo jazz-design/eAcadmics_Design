@@ -9781,12 +9781,63 @@ Breadcrumb Area
   background: rgba(20, 20, 20, 0.7); /* adjust opacity */
   z-index: -1;
 }
-
 .breadcrumb-bgabt .breadcrumb__content__wraper {
   position: relative;
   z-index: 2;
 }
 
+
+.breadcrumb-bgcont {
+  position: relative;
+  background:url("../img/about/cont_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0; /* adjust spacing */
+  color: #fff;
+  z-index: 1;
+}
+
+/* Overlay effect */
+.breadcrumb-bgcont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7); /* adjust opacity */
+  z-index: -1;
+}
+
+
+.breadcrumb-bgacont .breadcrumb__content__wraper {
+  position: relative;
+  z-index: 2;
+}
+
+.breadcrumb-bgplan {
+  position: relative;
+  background:url("../img/about/plan_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0; /* adjust spacing */
+  color: #fff;
+  z-index: 1;
+}
+
+/* Overlay effect */
+.breadcrumb-bgplan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7); /* adjust opacity */
+  z-index: -1;
+}
+
+
+.breadcrumb-bgplan .breadcrumb__content__wraper {
+  position: relative;
+  z-index: 2;
+}
 
 
 @media (min-width: 992px) and (max-width: 1365px) {
@@ -12927,6 +12978,7 @@ Dark Mode
 .is_dark .search__form .search__form__categories {
   background: var(--blackColor);
 }
+<<<<<<< HEAD
 .registerarea__video {
   position: relative; /* Make parent relative */
   display: inline-block; /* Keep content inline */
@@ -12961,6 +13013,54 @@ align-items: center;
 
 
 
+=======
+
+.switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 34px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px; width: 26px;
+      left: 4px; bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #1a3778;
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    .toggle-labels {
+      font-weight: bold;
+      margin: 0 10px;
+      font-size: 1.1rem;
+    }
+    .active-label {
+  border-bottom: 3px solid #1a3778;
+  padding-bottom: 2px;
+  color: #1a3778;
+}
+
+>>>>>>> bd1bea394d09744b737fea7c19247e83b145e5f9
 
 
 

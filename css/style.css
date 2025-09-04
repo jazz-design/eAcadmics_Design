@@ -12978,7 +12978,6 @@ Dark Mode
 .is_dark .search__form .search__form__categories {
   background: var(--blackColor);
 }
-<<<<<<< HEAD
 .registerarea__video {
   position: relative; /* Make parent relative */
   display: inline-block; /* Keep content inline */
@@ -13013,7 +13012,6 @@ align-items: center;
 
 
 
-=======
 
 .switch {
       position: relative;
@@ -13060,7 +13058,6 @@ align-items: center;
   color: #1a3778;
 }
 
->>>>>>> bd1bea394d09744b737fea7c19247e83b145e5f9
 
 
 

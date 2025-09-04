@@ -12926,4 +12926,46 @@ Dark Mode
 }
 .is_dark .search__form .search__form__categories {
   background: var(--blackColor);
-}/*# sourceMappingURL=style.css.map */
+}
+.registerarea__video {
+  position: relative; /* Make parent relative */
+  display: inline-block; /* Keep content inline */
+}
+
+.registerarea__video img {
+  display: block; /* Removes unwanted gaps */
+  max-width: 100%; /* Responsive */
+}
+
+.registerarea__video .video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center perfectly */
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: red; /* Change to your red color */
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerarea__video { eh vali class di display property comment krni
+/* display: flex; */
+align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */

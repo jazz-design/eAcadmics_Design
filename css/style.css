@@ -9914,7 +9914,30 @@ Breadcrumb Area
   z-index: 2;
 }
 
+.breadcrumb-bgci {
+  position: relative;
+  background:url("../img/about/ci_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0; /* adjust spacing */
+  color: #fff;
+  z-index: 1;
+}
 
+/* Overlay effect */
+.breadcrumb-bgci::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7); /* adjust opacity */
+  z-index: -1;
+}
+
+.breadcrumb-bgci .breadcrumb__content__wraper {
+  position: relative;
+  z-index: 2;
+}
 
 @media (min-width: 992px) and (max-width: 1365px) {
   .breadcrumbarea {

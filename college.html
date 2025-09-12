@@ -271,7 +271,7 @@
         <!-- theme fixed shadow -->
 
         <!-- breadcrumbarea__section__start -->
-        <div class="breadcrumbarea" data-aos="fade-up">
+        <div class="breadcrumbarea breadcrumb-bgclg" data-aos="fade-up">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -748,102 +748,69 @@
 
         <!-- about__tap__section__start -->
         <div class="abouttabarea sp_bottom_70 sp_top_50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12" data-aos="fade-up">
-                        <div class="text-center">
-                            <div class="default__small__button">ERP and Mobile App</div>
-                            <h2 style="color: #070707;">Complete College Management with <br>Powerful ERP Modules & Smart
-                                Mobile App</h2>
-                        </div>
-                        <ul class="nav  about__button__wrap" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="single__tab__link active" data-bs-toggle="tab"
-                                    data-bs-target="#projects__one" type="button">Comprehensive eAcademics
-                                    Modules</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="single__tab__link" data-bs-toggle="tab" data-bs-target="#projects__two"
-                                    type="button">Parent & Student Mobile App</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content tab__content__wrapper" id="myTabContent" data-aos="fade-up">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left side (Text + Tabs) -->
+            <div class="col-xl-8 col-lg-8 col-md-12" data-aos="fade-up">
+                <div>
+                    <div class="default__small__button">ERP and Mobile App</div>
+                    <h2 style="color: #070707;">Complete College Management with <br>Powerful ERP Modules & Smart
+                        Mobile App</h2>
+                </div>
+                <ul class="nav about__button__wrap" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="single__tab__link active" data-bs-toggle="tab"
+                            data-bs-target="#projects__one" type="button">eAcademics Modules</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="single__tab__link" data-bs-toggle="tab"
+                            data-bs-target="#projects__two" type="button">eAcademics Mobile App</button>
+                    </li>
+                </ul>
 
-                        <div class="tab-pane fade active show" id="projects__one" role="tabpanel"
-                            aria-labelledby="projects__one">
-                            <div class="col-xl-12">
-                                <div class="aboutarea__content__tap__wraper">
-                                    <p class="paragraph__1">
-                                        Our ERP solution is divided into 4 major categories, ensuring complete digital
-                                        control over college operations:
-                                    <div class="aboutarea__list__2">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont-check"></i> Core Modules – Admission, Fees, Accounts,
-                                                Exams, Timetable, and Library Management
-                                            </li>
-
-                                            <li>
-                                                <i class="icofont-check"></i> Resource Management – HR & Payroll,
-                                                Inventory, Hostel, and Transport Management.
-                                            </li>
-
-                                            <li>
-                                                <i class="icofont-check"></i> Communication Management – Bulk SMS,
-                                                Email, Parent-Teacher Connect, and Notifications.
-                                            </li>
-                                            <li>
-                                                <i class="icofont-check"></i> Data & System Integration – Biometric
-                                                Attendance, Payment Gateway, and Advanced Analytics Dashboard.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    </p>
-
-                                </div>
-
+                <div class="tab-content tab__content__wrapper" id="myTabContent" data-aos="fade-up">
+                    <!-- ERP content -->
+                    <div class="tab-pane fade active show" id="projects__one">
+                        <div class="aboutarea__content__tap__wraper">
+                            <p class="paragraph__1">
+                                Our ERP solution is divided into 4 major categories, ensuring complete digital control:
+                            </p>
+                            <div class="aboutarea__list__2">
+                                <ul>
+                                    <li><i class="icofont-check"></i> Core Modules – Admission, Fees, Accounts, Exams</li>
+                                    <li><i class="icofont-check"></i> Resource Management – HR, Hostel, Transport</li>
+                                    <li><i class="icofont-check"></i> Communication – SMS, Email, Notifications</li>
+                                    <li><i class="icofont-check"></i> Integration – Biometric, Payments, Analytics</li>
+                                </ul>
                             </div>
                         </div>
-
-                        <div class="tab-pane fade" id="projects__two" role="tabpanel" aria-labelledby="projects__two">
-
-                            <div class="col-xl-12">
-                                <div class="aboutarea__content__tap__wraper">
-                                    <p class="paragraph__1">
-                                        The eAcademics mobile application ensures a real-time digital bridge between
-                                        college, parents, and students:
-                                    <div class="aboutarea__list__2">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont-check"></i> Track daily activities, assignments, and
-                                                academic progress
-                                            </li>
-
-                                            <li>
-                                                <i class="icofont-check"></i> Receive instant updates via SMS, email,
-                                                and push notifications.
-                                            </li>
-
-                                            <li>
-                                                <i class="icofont-check"></i> Manage fees and other payments directly
-                                                from the app.
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    </p>
-
-                                </div>
-
+                    </div>
+                    <!-- Mobile App content -->
+                    <div class="tab-pane fade" id="projects__two">
+                        <div class="aboutarea__content__tap__wraper">
+                            <p class="paragraph__1">
+                                The eAcademics mobile application ensures a real-time digital bridge:
+                            </p>
+                            <div class="aboutarea__list__2">
+                                <ul>
+                                    <li><i class="icofont-check"></i> Track assignments & progress</li>
+                                    <li><i class="icofont-check"></i> Instant updates via SMS & push</li>
+                                    <li><i class="icofont-check"></i> Pay fees directly in the app</li>
+                                </ul>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
+
+            <!-- Right side (Image) -->
+            <div class="col-xl-4 col-lg-4 col-md-12 text-center" data-aos="fade-left">
+                <img src="img/about/clg_img3.png" alt="ERP and Mobile App" >
+            </div>
         </div>
+    </div>
+</div>
+
         <!-- .about__tap__section__end -->
 
         <!-- eventlistarea__section__start  -->

@@ -2444,9 +2444,9 @@ Hero Banner Area
   }
 }
 .herobannerarea.herobannerarea__2 {
-  background: var(--lightGrey11);
-  padding-top: 155px;
-  padding-bottom: 250px;
+  background: #b6f5fb;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .herobannerarea.herobannerarea__2 {
@@ -9934,10 +9934,38 @@ Breadcrumb Area
   z-index: -1;
 }
 
+
 .breadcrumb-bgci .breadcrumb__content__wraper {
   position: relative;
   z-index: 2;
 }
+
+.breadcrumb-bgclg {
+  position: relative;
+  background:url("../img/about/clg_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0; /* adjust spacing */
+  color: #fff;
+  z-index: 1;
+}
+
+/* Overlay effect */
+.breadcrumb-bgclg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7); /* adjust opacity */
+  z-index: -1;
+}
+
+
+.breadcrumb-bgclg .breadcrumb__content__wraper {
+  position: relative;
+  z-index: 2;
+}
+
 
 @media (min-width: 992px) and (max-width: 1365px) {
   .breadcrumbarea {

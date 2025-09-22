@@ -5733,7 +5733,7 @@ Event
 
 .pricingarea__content__wraper {
   padding: 50px 40px 40px 40px;
-  background: var(--lightGrey10);
+  background: #52e4f8;
   transition: var(--transition);
   border-radius: var(--borderRadius3);
 }
@@ -5790,7 +5790,7 @@ Event
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  color: var(--deepblue);
+  color: #000000;
   margin-bottom: 30px;
 }
 .pricingarea__content__wraper .pricingarea__list ul li i {
@@ -9319,7 +9319,8 @@ Course
 Contact Area
 -------------------------------*/
 .single__contact {
-  border: 1px solid var(--borderColor);
+  border: 1px solid #53cde3;
+  background-color: #53cde3;
   padding: 40px 35px 35px 40px;
   display: flex;
   align-items: center;
@@ -9367,24 +9368,27 @@ Contact Area
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
+  color: #000000;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .single__contact .contact__text p {
     font-size: 13px;
     line-height: 20px;
+     color: #000000;
   }
 }
 @media (max-width: 767px) {
   .single__contact .contact__text p {
     font-size: 13px;
     line-height: 20px;
+     color: #000000;
   }
 }
 .single__contact .contact__text span {
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
-  color: var(--contentColor);
+  color:#000000;
 }
 
 .contact__form__inner {

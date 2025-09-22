@@ -74,9 +74,9 @@
   --contentColor: #5F6C76;
   --contentColor2: #5C727D;
   --primaryColor: #1a3778;
-  --secondaryColor: #d32424;
-  --secondaryColor2: #d32424;
-  --secondaryColor3: #d32424;
+  --secondaryColor: #b21f1f;
+  --secondaryColor2: #b21f1f;
+  --secondaryColor3: #b21f1f;
   --blackColor: #000000;
   --blackColor2: #191B1E;
   --darkblack: #0C0E2B;
@@ -517,6 +517,23 @@ li {
   color: var(--whiteColor);
   border: 1px solid var(--secondaryColor);
   background-color: var(--secondaryColor);
+}
+
+.default__button_video {
+  padding: 10px 25px;
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  display: inline-block;
+  text-align: center;
+  border-radius: var(--borderRadius);
+  font-size: 15px;
+  border: 1px solid var(--secondaryColor);
+}
+.default__button_video:hover {
+  background-color: var(--whiteColor);
+  color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
 }
 
 @keyframes dot-anim {
@@ -982,18 +999,18 @@ Header Area
 .headerarea__main__menu nav ul > li a {
   padding: 40px 10px;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
   color: var(--blackColor);
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .headerarea__main__menu nav ul > li a {
-    padding: 30px 10px;
+    padding: 30px 7px;
   }
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .headerarea__main__menu nav ul > li a {
-    padding: 20px 10px;
+    padding: 20px 7px;
     font-size: 14px;
   }
 }
@@ -1229,25 +1246,25 @@ Header Area
   border-color: var(--primaryColor);
 }
 .headerarea__button a {
-  padding: 8px 15px;
+  padding: 8px 30px;
   background-color: var(--primaryColor);
   color: var(--whiteColor);
   display: inline-block;
   text-align: center;
   border-radius: var(--borderRadius);
-  font-size: 15px;
+  font-size: 16px;
   border: 1px solid var(--primaryColor);
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .headerarea__button a {
-    padding: 8px 10px;
-    font-size: 12px;
+    padding: 8px 30px;
+    font-size: 16px;
   }
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .headerarea__button a {
-    padding: 8px 15px;
-    font-size: 12px;
+    padding: 8px 30px;
+    font-size: 16px;
   }
 }
 .headerarea__button a:hover {
@@ -2444,7 +2461,7 @@ Hero Banner Area
   }
 }
 .herobannerarea.herobannerarea__2 {
-  background: #b6f5fb;
+  background: #53cde3;
   padding-top: 100px;
   padding-bottom: 50px;
 }
@@ -3823,7 +3840,7 @@ About Area
 .aboutarea__list__2 ul li {
   margin-bottom: 22px;
   color: var(--blackColor);
-  font-weight: 500;
+  font-weight: 400;
   display: block;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6246,7 +6263,7 @@ Register Area
   position: relative;
   z-index: 1;
   padding: 40px 35px 35px 35px;
-  background: var(--lightGrey10);
+  background: #53cde3;
   box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
   border-radius: var(--borderRadius);
   margin-bottom: -150px;
@@ -10114,7 +10131,7 @@ Breadcrumb Area
 .breadcrumb__inner ul li {
   font-size: 18px;
   line-height: 22px;
-  color: var(--skycolor);
+  color: #04c0e2;
   font-weight: 400;
 }
 .breadcrumb__inner ul li a {
@@ -10123,10 +10140,10 @@ Breadcrumb Area
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: var(--skycolor);
+  color: #04c0e2;
 }
 .breadcrumb__inner ul li a:hover {
-  color: var(--primaryColor);
+  color:#ffffff;
 }
 .breadcrumb__inner ul li a:after {
   position: absolute;
@@ -13237,6 +13254,32 @@ align-items: center;
     }
 
 
+/* Slider arrows with circular background */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px;                /* circle size */
+  height: 30px;
+  border-radius: 50%;         /* make it round */
+  background-color: #ffffff;  /* background circle color */
+  color: #032156;                /* arrow icon color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #111;   /* hover background color */
+  color: #fff;              /* arrow color on hover */
+}
+
+.accordion-item,
+.accordion-button,
+.accordion-body {
+  border: none !important;
+  box-shadow: none !important; /* remove Bootstrap shadow */
+}
 
 
 /*# sourceMappingURL=style.css.map */

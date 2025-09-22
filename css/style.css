@@ -536,6 +536,23 @@ li {
   border: 1px solid var(--secondaryColor);
 }
 
+.default__button_footer{
+  padding: 15px 40px;
+  background-color:#1abed4;
+  color: var(--whiteColor);
+  display: inline-block;
+  text-align: center;
+  border-radius: var(--borderRadius);
+  font-size: 18px;
+  border: 1px solid #1abed4;
+}
+.default__button_footer:hover {
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+  border-color: #1abed4;
+  border: 1px solid #1abed4;
+}
+
 @keyframes dot-anim {
   0% {
     transform: translateY(20px);
@@ -999,9 +1016,10 @@ Header Area
 .headerarea__main__menu nav ul > li a {
   padding: 40px 10px;
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   position: relative;
   color: var(--blackColor);
+
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .headerarea__main__menu nav ul > li a {
@@ -1016,6 +1034,7 @@ Header Area
 }
 .headerarea__main__menu nav ul > li:hover > a {
   color: var(--primaryColor);
+  font-weight: 600;
 }
 .headerarea__main__menu nav ul > li .headerarea__submenu {
   position: absolute;
@@ -9439,7 +9458,7 @@ Contact Area
   width: 100%;
   border: 1px solid var(--borderColor2);
   padding-left: 27px;
-  height: 285PX;
+  height: 150px
   padding-top: 30PX;
   border-radius: var(--borderRadius);
   background: transparent;
@@ -12335,7 +12354,6 @@ Footer Area
   border-radius: var(--borderRadius);
   font-size: 15px;
   height: 62px;
-  line-height: 62px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .footerarea__newsletter__button .subscribe__btn {

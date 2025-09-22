@@ -292,7 +292,7 @@
         </div>
         <!-- breadcrumbarea__section__end--> 
         <!-- Learning__section__start -->
-        <div class="pricingarea sp_bottom_100 sp_top_90">
+        <div class="pricingarea sp_top_90">
             <div class="container">
                 <div class="row" data-aos="fade-up">
                     <div class="section__title text-center">
@@ -640,7 +640,7 @@
                 
                 </div>
             </div>
-        </div>
+        </div><br> <br>
         <!-- Learning__section__end-->
 
    <!-- footer__section__start -->
@@ -848,6 +848,33 @@
     <script src="js/main.js"></script>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleSwitch = document.getElementById("toggleSwitch");
+    const webContent = document.getElementById("webcontent");
+    const bothContent = document.getElementById("bothcontent");
+    const webLabel = document.getElementById("webLabel");
+    const bothLabel = document.getElementById("bothLabel");
+
+    toggleSwitch.addEventListener("change", function () {
+      if (this.checked) {
+        // Show Desktop App
+        webContent.classList.add("d-none");
+        bothContent.classList.remove("d-none");
+
+        webLabel.classList.remove("active-label");
+        bothLabel.classList.add("active-label");
+      } else {
+        // Show Web + Mobile App
+        bothContent.classList.add("d-none");
+        webContent.classList.remove("d-none");
+
+        bothLabel.classList.remove("active-label");
+        webLabel.classList.add("active-label");
+      }
+    });
+  });
+</script>
 
 
 </body>

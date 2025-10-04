@@ -294,7 +294,9 @@
                                     
                                     <div class="hreobannerarea__button__2">
                                         <a class="default__button" href="buy-school-college-software.html">Get Started</a>
-                                        <a class="default__button hreobannerarea__button__3" href="https://www.youtube.com/watch?v=LIapx42nz3s" target="_blank">Watch Video</a>
+                                        <a class="default__button hreobannerarea__button__3 popup-youtube" href="https://www.youtube.com/watch?v=LIapx42nz3s">Watch Video</a>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -331,7 +333,7 @@
                                     
                                     <div class="hreobannerarea__button__2">
                                         <a class="default__button" href="buy-school-college-software.html">Get Started</a>
-                                        <a class="default__button hreobannerarea__button__3" href="https://www.youtube.com/watch?v=LIapx42nz3s">Watch Video</a>
+                                        <a class="default__button hreobannerarea__button__3 popup-youtube" href="https://www.youtube.com/watch?v=LIapx42nz3s">Watch Video</a>
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +370,7 @@
                                     
                                     <div class="hreobannerarea__button__2">
                                         <a class="default__button" href="buy-school-college-software.html">Get Started</a>
-                                        <a class="default__button hreobannerarea__button__3" href="https://www.youtube.com/watch?v=LIapx42nz3s">Watch Video</a>
+                                        <a class="default__button hreobannerarea__button__3 popup-youtube" href="https://www.youtube.com/watch?v=LIapx42nz3s">Watch Video</a>
                                     </div>
                                 </div>
                             </div>
@@ -406,7 +408,7 @@
                                     
                                     <div class="hreobannerarea__button__2">
                                         <a class="default__button" href="buy-school-college-software.html">Get Started</a>
-                                        <a class="default__button hreobannerarea__button__3" href="https://www.youtube.com/watch?v=LIapx42nz3s">Watch Video</a>
+                                        <a class="default__button hreobannerarea__button__3 popup-youtube" href="https://www.youtube.com/watch?v=LIapx42nz3s">Watch Video</a>
                                     </div>
                                 </div>
                             </div>
@@ -844,9 +846,10 @@ eAcademics offers flexible pricing and scalable plans. Upgrade anytime as you gr
                             <div class="registerarea__content">
                                 <div class="registerarea__video">
                                     <img src="img/about/videobg.png" alt="eAcademics Video Demo">
-                                    <a class="video-btn" href="#">
-                                        <img loading="lazy" src="img/icon/play.png" alt="">
-                                    </a>
+                                    <a class="video-btn popup-youtube" href="https://www.youtube.com/watch?v=LIapx42nz3s"> 
+   <img loading="lazy" src="img/icon/play.png" alt="">
+</a>
+
                                 </div>
                             </div>
                             
@@ -1220,6 +1223,41 @@ We help organizations streamline daily activities and track business progress se
     <script src="js/plugins.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+     
+   <script>
+$(document).ready(function() {
+  $('.popup-youtube').magnificPopup({
+      type: 'iframe',
+      iframe: {
+          patterns: {
+              youtube: {
+                  index: 'youtube.com/watch?v=',
+                  id: function(url) {
+                      var m = url.match(/[?&]v=([^&]+)/);
+                      return m && m[1] ? m[1] : null;
+                  },
+                  src: 'https://www.youtube.com/embed/%id%?autoplay=1&enablejsapi=1'
+              }
+          }
+      },
+      callbacks: {
+          open: function() {
+              // Ensure video stops when popup closes
+              this.content.find('iframe').attr('src', function(i, src) {
+                  return src + "&autoplay=1";
+              });
+          },
+          close: function() {
+              // Stop video on close
+              var iframe = this.content.find('iframe');
+              iframe.attr("src", iframe.attr("src")); 
+          }
+      }
+  });
+});
+</script>
+
 
 
 
